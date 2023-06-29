@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <h2>Now Loading...</h2>
+    </div>
+
+    <div class="content">
+      <a href="index.html" style="color: aliceblue; font-size: 100px;">Sumire of the world</a>
+    </div>
+
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          const loader = document.querySelector(".loader");
+          loader.classList.add("loaded");
+
+          const content = document.querySelector(".content");
+          content.style.visibility = "visible";
+        }, 1300);
+      };
+    </script>
+  </body>
+</html>
